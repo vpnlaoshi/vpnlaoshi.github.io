@@ -1,4 +1,4 @@
-# VPN老师 | 5月10日21.8M/S|免费SSR/V2ray/Shadowrocket/Clash订阅节点分享  更新时间 2025-05-10 22:59:27
+# VPN老师 | 5月12日19.8M/S|免费Shadowrocket/Clash/SSR/V2ray订阅节点分享  更新时间 2025-05-12 10:29:06
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnlaoshi.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://vpnlaoshi.github.io/uploads/2025/05/0-20250510.yaml
-- https://vpnlaoshi.github.io/uploads/2025/05/1-20250510.yaml
-- https://vpnlaoshi.github.io/uploads/2025/05/2-20250510.yaml
-- https://vpnlaoshi.github.io/uploads/2025/05/3-20250510.yaml
-- https://vpnlaoshi.github.io/uploads/2025/05/4-20250510.yaml
+- https://vpnlaoshi.github.io/uploads/2025/05/0-20250512.yaml
+- https://vpnlaoshi.github.io/uploads/2025/05/1-20250512.yaml
+- https://vpnlaoshi.github.io/uploads/2025/05/2-20250512.yaml
+- https://vpnlaoshi.github.io/uploads/2025/05/3-20250512.yaml
+- https://vpnlaoshi.github.io/uploads/2025/05/4-20250512.yaml
 
 ### V2ray订阅链接
 
-- https://vpnlaoshi.github.io/uploads/2025/05/0-20250510.txt
-- https://vpnlaoshi.github.io/uploads/2025/05/1-20250510.txt
-- https://vpnlaoshi.github.io/uploads/2025/05/2-20250510.txt
-- https://vpnlaoshi.github.io/uploads/2025/05/3-20250510.txt
-- https://vpnlaoshi.github.io/uploads/2025/05/4-20250510.txt
+- https://vpnlaoshi.github.io/uploads/2025/05/0-20250512.txt
+- https://vpnlaoshi.github.io/uploads/2025/05/1-20250512.txt
+- https://vpnlaoshi.github.io/uploads/2025/05/2-20250512.txt
+- https://vpnlaoshi.github.io/uploads/2025/05/3-20250512.txt
+- https://vpnlaoshi.github.io/uploads/2025/05/4-20250512.txt
 
 ### Sing-box订阅链接
 
-- https://vpnlaoshi.github.io/uploads/2025/05/20250510.json
+- https://vpnlaoshi.github.io/uploads/2025/05/20250512.json
 
 ## 更多clash节点订阅 ：
 
