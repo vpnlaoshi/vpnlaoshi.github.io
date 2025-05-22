@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpnlaoshi.github.io/news/article-117175.htm" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>V2Ray命令全解析：从入门到进阶的实用指南</title>
+        <meta name="description" content="随着互联网审查和封锁日益严峻，科学上网工具成为保障网络自由的重要利器。V2Ray作为当前最受欢迎且功能强大的代理软件之一，以其灵活的协议支持和高度可定制性，深受广大用户青睐。掌握V2Ray的命令行操作" />
+        <link rel="icon" href="/assets/website/img/vergeclash/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="VPN老师免费订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnlaoshi.github.io/news/article-117175.htm" />
+    <meta property="og:site_name" content="VPN老师免费订阅中文网" />
+    <meta property="og:title" content="V2Ray命令全解析：从入门到进阶的实用指南" />
+    <meta property="og:image" content="https://vpnlaoshi.github.io/uploads/20240822/ddafae324edfb5d67e5eaebdd903119b.webp" />
+        <meta property="og:release_date" content="2025-05-22T08:56:13" />
+    <meta property="og:updated_time" content="2025-05-22T08:56:13" />
+        <meta property="og:description" content="随着互联网审查和封锁日益严峻，科学上网工具成为保障网络自由的重要利器。V2Ray作为当前最受欢迎且功能强大的代理软件之一，以其灵活的协议支持和高度可定制性，深受广大用户青睐。掌握V2Ray的命令行操作" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="V2Ray命令全解析：从入门到进阶的实用指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="/assets/website/css/vergeclash/fontawesome-all.min.css">
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="/assets/website/fonts/vergeclash/flaticon.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="/assets/website/css/vergeclash/magnific-popup.css">
+    <!-- nice-select css -->
+    <link rel="stylesheet" href="/assets/website/css/vergeclash/nice-select.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="/assets/website/css/vergeclash/bootstrap.min.css">
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="/assets/website/css/vergeclash/swiper.min.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="/assets/website/css/vergeclash/animate.css">
+    <!-- main style css link -->
+    <link rel="stylesheet" href="/assets/website/css/vergeclash/style.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NMRH96WYWE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NMRH96WYWE');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div><!-- /preloader-icon -->
+        </div><!-- /preloader-inner -->
+    </div><!-- /preloader -->
+    <!-- header-section start -->
+    <header class="header-section">
+        <div class="header">
+            <div class="header-bottom-area">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg p-0">
+                        <a class="site-logo site-title" href="/">
+                                                <span>VPN老师</span>
+                                                </a>
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="fas fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav main-menu ml-auto">
+                                                                <li><a href="/">首页</a></li>
+                                                                <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                <li><a href="/news/">新闻资讯</a></li>
+                                                                <li><a href="/client.htm">客户端</a></li>
+                                                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-section end -->
+    <!-- inner-banner-section start -->
+    <section class="inner-banner-section bg-overlay-main-two bg_img" data-background="assets/images/bg-3.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="inner-banner-content">
+                        <h1 class="title wow fade-in-up" data-wow-duration="1s" data-wow-delay="0.5s">V2Ray命令全解析：从入门到进阶的实用指南</h1>
+                        <div class="breadcrumb-area wow fade-in-bottom" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">首页</a></li>
+                                    <li class="breadcrumb-item"><a href="/news/">新闻资讯</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">正文</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- inner-banner-section end -->
+    
+    <a href="#" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+    <!-- about-section start -->
+    <section class="about-section pd-t-120 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="26" data-end="199" class="">随着互联网审查和封锁日益严峻，科学上网工具成为保障网络自由的重要利器。V2Ray作为当前最受欢迎且功能强大的代理软件之一，以其灵活的协议支持和高度可定制性，深受广大用户青睐。掌握V2Ray的命令行操作不仅能让用户快速启动服务，更能实现复杂的网络配置与性能优化。本文将从基础到高级，全面系统地解析V2Ray的命令及其参数，助你成为V2Ray的高手。</p>
+<hr data-start="201" data-end="204" class="" style="">
+<h2 data-start="206" data-end="228" class="">一、V2Ray简介：什么是V2Ray？</h2>
+<p data-start="230" data-end="384" class="">V2Ray是一款开源网络代理工具，专为科学上网设计，基于VMess协议构建，能够帮助用户绕过防火墙访问被屏蔽的网站。它不仅支持多种代理协议，还具备强大的隐私保护和流量混淆功能，保障用户的网络安全和匿名性。V2Ray能够运行在多种操作系统平台，如Windows、Linux、macOS及移动设备，适用范围极广。</p>
+<hr data-start="386" data-end="389" class="" style="">
+<h2 data-start="391" data-end="405" class="">二、V2Ray命令基础</h2>
+<p data-start="407" data-end="474" class="">V2Ray的核心操作均依赖于命令行输入，通过不同的命令控制V2Ray的运行状态和配置管理。掌握以下基础命令，是使用V2Ray的第一步：</p>
+<ul data-start="476" data-end="626">
+<li data-start="476" data-end="523" class="" style="">
+<p data-start="478" data-end="523" class=""><strong data-start="478" data-end="491">v2ray run</strong><br data-start="491" data-end="494">
+启动V2Ray代理服务，使配置文件生效并开始转发流量。</p>
+</li>
+<li data-start="525" data-end="571" class="" style="">
+<p data-start="527" data-end="571" class=""><strong data-start="527" data-end="541">v2ray stop</strong><br data-start="541" data-end="544">
+停止当前运行的V2Ray服务，释放占用的系统资源。</p>
+</li>
+<li data-start="573" data-end="626" class="" style="">
+<p data-start="575" data-end="626" class=""><strong data-start="575" data-end="592">v2ray version</strong><br data-start="592" data-end="595">
+查看当前V2Ray客户端的版本信息，方便判断是否需要更新。</p>
+</li>
+</ul>
+<p data-start="628" data-end="666" class="">这几个命令是日常使用中最常见的，能够帮助用户完成服务的启动、停止和版本检测。</p>
+<hr data-start="668" data-end="671" class="" style="">
+<h2 data-start="673" data-end="689" class="">三、V2Ray常用命令详解</h2>
+<h3 data-start="691" data-end="706" class="">3.1 启动与停止服务</h3>
+<ul data-start="708" data-end="831">
+<li data-start="708" data-end="774" class="" style="">
+<p data-start="710" data-end="774" class=""><strong data-start="710" data-end="718">启动服务</strong>：<br data-start="719" data-end="722">
+输入 <code data-start="727" data-end="738">v2ray run</code> 即可快速启动服务，V2Ray会读取默认或指定的配置文件，启动代理功能。</p>
+</li>
+<li data-start="776" data-end="831" class="" style="">
+<p data-start="778" data-end="831" class=""><strong data-start="778" data-end="786">停止服务</strong>：<br data-start="787" data-end="790">
+通过 <code data-start="795" data-end="807">v2ray stop</code> 终止运行中的服务，适用于需要重启或更改配置时。</p>
+</li>
+</ul>
+<h3 data-start="833" data-end="847" class="">3.2 配置文件管理</h3>
+<ul data-start="849" data-end="990">
+<li data-start="849" data-end="916" class="" style="">
+<p data-start="851" data-end="916" class=""><strong data-start="851" data-end="862">检查配置合法性</strong>：<br data-start="863" data-end="866">
+命令 <code data-start="871" data-end="890">v2ray config test</code> 用于验证配置文件是否符合语法规范，避免启动时报错。</p>
+</li>
+<li data-start="918" data-end="990" class="" style="">
+<p data-start="920" data-end="990" class=""><strong data-start="920" data-end="930">加载配置文件</strong>：<br data-start="931" data-end="934">
+使用 <code data-start="939" data-end="963">v2ray config load [路径]</code> 可以手动加载指定路径下的配置文件，灵活切换代理环境。</p>
+</li>
+</ul>
+<h3 data-start="992" data-end="1004" class="">3.3 日志管理</h3>
+<ul data-start="1006" data-end="1134">
+<li data-start="1006" data-end="1063" class="" style="">
+<p data-start="1008" data-end="1063" class=""><strong data-start="1008" data-end="1018">查看实时日志</strong>：<br data-start="1019" data-end="1022">
+输入 <code data-start="1027" data-end="1038">v2ray log</code> 能够查看当前运行时的详细日志，便于排查连接问题。</p>
+</li>
+<li data-start="1065" data-end="1134" class="" style="">
+<p data-start="1067" data-end="1134" class=""><strong data-start="1067" data-end="1077">设置日志级别</strong>：<br data-start="1078" data-end="1081">
+通过 <code data-start="1086" data-end="1109">v2ray log level debug</code> 可以将日志级别调整为调试模式，输出更详尽的信息。</p>
+</li>
+</ul>
+<h3 data-start="1136" data-end="1151" class="">3.4 更新与版本管理</h3>
+<ul data-start="1153" data-end="1275">
+<li data-start="1153" data-end="1209" class="" style="">
+<p data-start="1155" data-end="1209" class=""><strong data-start="1155" data-end="1163">查看版本</strong>：<br data-start="1164" data-end="1167">
+执行 <code data-start="1172" data-end="1187">v2ray version</code> 快速获取客户端版本，方便确认当前版本状态。</p>
+</li>
+<li data-start="1211" data-end="1275" class="" style="">
+<p data-start="1213" data-end="1275" class=""><strong data-start="1213" data-end="1221">自动更新</strong>：<br data-start="1222" data-end="1225">
+命令 <code data-start="1230" data-end="1244">v2ray update</code> 能帮助用户自动下载安装最新版本，保持软件的安全性和功能完善。</p>
+</li>
+</ul>
+<hr data-start="1277" data-end="1280" class="" style="">
+<h2 data-start="1282" data-end="1299" class="">四、V2Ray高级命令与操作</h2>
+<p data-start="1301" data-end="1338" class="">V2Ray不仅支持基本功能，还具备丰富的高级命令，满足复杂网络环境的需求。</p>
+<h3 data-start="1340" data-end="1355" class="">4.1 多协议支持命令</h3>
+<p data-start="1357" data-end="1410" class="">V2Ray支持VMess、Shadowsocks、Socks、HTTP等多种代理协议，用户可根据需求选择：</p>
+<ul data-start="1412" data-end="1545">
+<li data-start="1412" data-end="1474" class="" style="">
+<p data-start="1414" data-end="1474" class=""><strong data-start="1414" data-end="1427">使用VMess协议</strong>：<br data-start="1428" data-end="1431">
+<code data-start="1433" data-end="1446">v2ray vmess</code> 可直接启动基于VMess协议的连接，常用于突破防火墙。</p>
+</li>
+<li data-start="1476" data-end="1545" class="" style="">
+<p data-start="1478" data-end="1545" class=""><strong data-start="1478" data-end="1497">使用Shadowsocks协议</strong>：<br data-start="1498" data-end="1501">
+通过 <code data-start="1506" data-end="1516">v2ray ss</code> 实现Shadowsocks代理功能，适合轻量级科学上网。</p>
+</li>
+</ul>
+<h3 data-start="1547" data-end="1561" class="">4.2 复杂网络配置</h3>
+<ul data-start="1563" data-end="1694">
+<li data-start="1563" data-end="1627" class="" style="">
+<p data-start="1565" data-end="1627" class=""><strong data-start="1565" data-end="1574">设置多出口</strong>：<br data-start="1575" data-end="1578">
+命令 <code data-start="1583" data-end="1606">v2ray destination set</code> 可配置多个流量出口，实现灵活的路由策略。</p>
+</li>
+<li data-start="1629" data-end="1694" class="" style="">
+<p data-start="1631" data-end="1694" class=""><strong data-start="1631" data-end="1641">动态端口配置</strong>：<br data-start="1642" data-end="1645">
+使用 <code data-start="1650" data-end="1670">v2ray port dynamic</code> 启用动态端口分配，提高网络安全性和连接隐蔽性。</p>
+</li>
+</ul>
+<h3 data-start="1696" data-end="1710" class="">4.3 性能优化指令</h3>
+<ul data-start="1712" data-end="1833">
+<li data-start="1712" data-end="1768" class="" style="">
+<p data-start="1714" data-end="1768" class=""><strong data-start="1714" data-end="1724">开启流量统计</strong>：<br data-start="1725" data-end="1728">
+输入 <code data-start="1733" data-end="1749">v2ray stats on</code> 激活流量监控，便于用户分析使用情况。</p>
+</li>
+<li data-start="1770" data-end="1833" class="" style="">
+<p data-start="1772" data-end="1833" class=""><strong data-start="1772" data-end="1782">关闭多路复用</strong>：<br data-start="1783" data-end="1786">
+通过 <code data-start="1791" data-end="1806">v2ray mux off</code> 禁用多路复用功能，解决部分复杂网络环境中的连接问题。</p>
+</li>
+</ul>
+<hr data-start="1835" data-end="1838" class="" style="">
+<h2 data-start="1840" data-end="1857" class="">五、V2Ray命令行参数详解</h2>
+<p data-start="1859" data-end="1887" class="">V2Ray命令行支持多种参数，帮助用户实现更灵活的控制。</p>
+<ul data-start="1889" data-end="2015">
+<li data-start="1889" data-end="1933" class="" style="">
+<p data-start="1891" data-end="1933" class=""><strong data-start="1891" data-end="1907">-config [路径]</strong><br data-start="1907" data-end="1910">
+指定配置文件路径，方便管理不同的配置环境。</p>
+</li>
+<li data-start="1935" data-end="1975" class="" style="">
+<p data-start="1937" data-end="1975" class=""><strong data-start="1937" data-end="1946">-test</strong><br data-start="1946" data-end="1949">
+只测试配置文件正确性，不启动服务，适合调试使用。</p>
+</li>
+<li data-start="1977" data-end="2015" class="" style="">
+<p data-start="1979" data-end="2015" class=""><strong data-start="1979" data-end="1991">-version</strong><br data-start="1991" data-end="1994">
+打印V2Ray版本信息，确认软件状态。</p>
+</li>
+</ul>
+<p data-start="2017" data-end="2040" class="">合理利用这些参数，可以极大提升使用效率和体验。</p>
+<hr data-start="2042" data-end="2045" class="" style="">
+<h2 data-start="2047" data-end="2059" class="">六、常见问题FAQ</h2>
+<ol data-start="2061" data-end="2371">
+<li data-start="2061" data-end="2114" class="" style="">
+<p data-start="2064" data-end="2114" class=""><strong data-start="2064" data-end="2080">V2Ray命令如何使用？</strong><br data-start="2080" data-end="2083">
+通过终端输入命令，结合配置文件和参数，实现对服务的控制。</p>
+</li>
+<li data-start="2116" data-end="2175" class="" style="">
+<p data-start="2119" data-end="2175" class=""><strong data-start="2119" data-end="2133">如何更新V2Ray？</strong><br data-start="2133" data-end="2136">
+使用 <code data-start="2142" data-end="2156">v2ray update</code> 自动下载最新版本，确保功能和安全性。</p>
+</li>
+<li data-start="2177" data-end="2234" class="" style="">
+<p data-start="2180" data-end="2234" class=""><strong data-start="2180" data-end="2196">如何查看V2Ray日志？</strong><br data-start="2196" data-end="2199">
+通过 <code data-start="2205" data-end="2216">v2ray log</code> 实时查看，也可配置日志输出到文件。</p>
+</li>
+<li data-start="2236" data-end="2297" class="" style="">
+<p data-start="2239" data-end="2297" class=""><strong data-start="2239" data-end="2255">V2Ray支持哪些协议？</strong><br data-start="2255" data-end="2258">
+支持VMess、Shadowsocks、Socks、HTTP等多种协议。</p>
+</li>
+<li data-start="2299" data-end="2371" class="" style="">
+<p data-start="2302" data-end="2371" class=""><strong data-start="2302" data-end="2316">如何配置代理服务器？</strong><br data-start="2316" data-end="2319">
+修改配置文件，指定服务器地址、端口及协议，使用 <code data-start="2346" data-end="2365">v2ray config load</code> 加载配置。</p>
+</li>
+</ol>
+<hr data-start="2373" data-end="2376" class="" style="">
+<h2 data-start="2378" data-end="2385" class="">七、总结</h2>
+<p data-start="2387" data-end="2510" class="">通过本文的详细介绍，用户不仅能够熟练掌握V2Ray的基础命令，更能运用高级命令实现复杂网络需求和性能优化。V2Ray凭借其强大的功能和灵活的命令行操作，成为科学上网领域不可或缺的工具。掌握这些命令和参数，能够让你更自由、安全地上网，提升网络体验。</p>
+<hr data-start="2512" data-end="2515" class="" style="">
+<h2 data-start="2517" data-end="2524" class="">精彩点评</h2>
+<p data-start="2526" data-end="2739" class="">本文以条理清晰、结构严谨的方式全方位解析了V2Ray的命令体系，从基础启动停止，到复杂配置和性能优化，每一步均配合详细的命令说明和应用场景，兼具理论与实践指导。语言简洁精准，避免晦涩难懂的术语堆砌，极大降低了读者的学习门槛。特别值得称赞的是，文章在FAQ部分针对用户常见疑问提供了快速解答，增强了实用性。整体来看，这篇指南不仅适合初学者入门，也为有经验的技术用户提供了丰富的操作细节，是一份不可多得的V2Ray命令全解析佳作。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-116865.htm">解锁世界的钥匙：青少年科学上网安全指南全解</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-114409.htm" title="如何高效爬取V2Ray链接：详尽指南与实用技巧">如何高效爬取V2Ray链接：详尽指南与实用技巧</a></li>
+                        <li class="py-2"><a href="/news/article-117175.htm" title="V2Ray命令全解析：从入门到进阶的实用指南">V2Ray命令全解析：从入门到进阶的实用指南</a></li>
+                        <li class="py-2"><a href="/news/article-116865.htm" title="解锁世界的钥匙：青少年科学上网安全指南全解">解锁世界的钥匙：青少年科学上网安全指南全解</a></li>
+                        <li class="py-2"><a href="/news/article-115627.htm" title="全面破解：如何诊断与解决v2ray服务器常见错误，保障稳定科学上网体验">全面破解：如何诊断与解决v2ray服务器常见错误，保障稳定科学上网体验</a></li>
+                        <li class="py-2"><a href="/news/article-116245.htm" title="详解Shadowrocket下架风波及iOS科学上网替代方案全攻略">详解Shadowrocket下架风波及iOS科学上网替代方案全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-115012.htm" title="完全指南：如何获取和使用Vmess免费订阅链接">完全指南：如何获取和使用Vmess免费订阅链接</a></li>
+                        <li class="py-2"><a href="/news/article-116557.htm" title="斐讯K2SS科学上网全攻略：从入门到实操详解">斐讯K2SS科学上网全攻略：从入门到实操详解</a></li>
+                        <li class="py-2"><a href="/news/article-114394.htm" title="安卓手机Clash节点管理全解析：如何删除不需要的节点提升网络体验">安卓手机Clash节点管理全解析：如何删除不需要的节点提升网络体验</a></li>
+                        <li class="py-2"><a href="/news/article-114712.htm" title="全面解析科学上网：别名、工具与应用全方位指南">全面解析科学上网：别名、工具与应用全方位指南</a></li>
+                        <li class="py-2"><a href="/news/article-113792.htm" title="苹果X科学上网全方位指南：如何轻松畅享全球互联网">苹果X科学上网全方位指南：如何轻松畅享全球互联网</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-section end -->
+
+        <div class="privacy-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <p>
+                        <a href="/">VPN老师免费订阅中文网</a> 版权所有 Powered by WordPress
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-section end -->
+    <!-- jquery -->
+    <script src="/assets/website/js/frontend/vergeclash/jquery-3.3.1.min.js"></script>
+    <!-- migarate-jquery -->
+    <script src="/assets/website/js/frontend/vergeclash/jquery-migrate-3.0.0.js"></script>
+    <!-- bootstrap js -->
+    <script src="/assets/website/js/frontend/vergeclash/bootstrap.min.js"></script>
+    <!-- magnific-popup js -->
+    <script src="/assets/website/js/frontend/vergeclash/jquery.magnific-popup.js"></script>
+    <!-- isotope -->
+    <script src="/assets/website/js/frontend/vergeclash/isotope.pkgd.min.js"></script>
+    <!-- nice-select js-->
+    <script src="/assets/website/js/frontend/vergeclash/jquery.nice-select.js"></script>
+    <!-- swipper js -->
+    <script src="/assets/website/js/frontend/vergeclash/swiper.min.js"></script>
+    <!-- waypoints js link -->
+    <script src="/assets/website/js/frontend/vergeclash/jquery.waypoints.min.js"></script>
+    <!-- counterup js -->
+    <script src="/assets/website/js/frontend/vergeclash/jquery.counterup.min.js"></script>
+    <!--typed js-->
+    <script src="/assets/website/js/frontend/vergeclash/typed.js"></script>
+    <!-- wow js file -->
+    <script src="/assets/website/js/frontend/vergeclash/wow.min.js"></script>
+    <!-- main -->
+    <script src="/assets/website/js/frontend/vergeclash/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
