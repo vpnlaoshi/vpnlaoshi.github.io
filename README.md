@@ -1,4 +1,4 @@
-# VPN老师 | 11月17日20.4M/S|免费Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅节点分享  更新时间 2026-11-17 11:39:26
+# VPN老师 | 11月26日19.5M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点分享  更新时间 2026-11-26 08:11:44
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnlaoshi.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://vpnlaoshi.github.io/uploads/2026/11/0-20261117.yaml
-- https://vpnlaoshi.github.io/uploads/2026/11/1-20261117.yaml
-- https://vpnlaoshi.github.io/uploads/2026/11/2-20261117.yaml
-- https://vpnlaoshi.github.io/uploads/2026/11/3-20261117.yaml
-- https://vpnlaoshi.github.io/uploads/2026/11/4-20261117.yaml
+- https://vpnlaoshi.github.io/uploads/2026/11/0-20261126.yaml
+- https://vpnlaoshi.github.io/uploads/2026/11/1-20261126.yaml
+- https://vpnlaoshi.github.io/uploads/2026/11/2-20261126.yaml
+- https://vpnlaoshi.github.io/uploads/2026/11/3-20261126.yaml
+- https://vpnlaoshi.github.io/uploads/2026/11/4-20261126.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://vpnlaoshi.github.io/uploads/2026/11/0-20261117.txt
-- https://vpnlaoshi.github.io/uploads/2026/11/1-20261117.txt
-- https://vpnlaoshi.github.io/uploads/2026/11/2-20261117.txt
-- https://vpnlaoshi.github.io/uploads/2026/11/3-20261117.txt
-- https://vpnlaoshi.github.io/uploads/2026/11/4-20261117.txt
+- https://vpnlaoshi.github.io/uploads/2026/11/0-20261126.txt
+- https://vpnlaoshi.github.io/uploads/2026/11/1-20261126.txt
+- https://vpnlaoshi.github.io/uploads/2026/11/2-20261126.txt
+- https://vpnlaoshi.github.io/uploads/2026/11/3-20261126.txt
+- https://vpnlaoshi.github.io/uploads/2026/11/4-20261126.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://vpnlaoshi.github.io/uploads/2026/11/20261117.json
+- https://vpnlaoshi.github.io/uploads/2026/11/20261126.json
 
 ## 更多Clash节点订阅 ：
 
